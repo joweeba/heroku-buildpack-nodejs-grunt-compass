@@ -184,7 +184,7 @@ echo "export PATH=\"\$HOME/bin:\$HOME/node_modules/.bin:\$PATH\"" > $BUILD_DIR/.
 echo "export PATH=\"\$HOME/.gem/ruby/1.9.1/bin:\$PATH\"" > $BUILD_DIR/.profile.d/ruby.sh
 
 if [ -f $BUILD_DIR/grunt.js ] || [ -f $BUILD_DIR/Gruntfile.js ] || [ -f $BUILD_DIR/Gruntfile.coffee ]; then
-  run_npm "install -g grunt-cli"
+  run_npm "install grunt-cli"
   echo "-----> Found Gruntfile, running grunt heroku task"
   which grunt
   $BUILD_DIR/node_modules/grunt-cli/bin/grunt heroku
