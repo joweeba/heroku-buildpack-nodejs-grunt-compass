@@ -190,7 +190,7 @@ if [ -f $BUILD_DIR/grunt.js ] || [ -f $BUILD_DIR/Gruntfile.js ] || [ -f $BUILD_D
   pwd
   echo $BUILD_DIR
   # which grunt
-  $BUILD_DIR/node_modules/grunt-cli/bin/grunt build
+  $BUILD_DIR/node_modules/grunt-cli/bin/grunt dist
   # grunt build
 else
   echo "-----> No Gruntfile (grunt.js, Gruntfile.js, Gruntfile.coffee) found"
